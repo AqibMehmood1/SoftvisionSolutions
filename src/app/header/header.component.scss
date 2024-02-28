@@ -1,0 +1,36 @@
+nav{
+    background-color: black;
+}
+a{
+    color: white;
+}
+ /* Default styling for both images */
+//  .logo-mobile, .logo-desktop {
+//     max-width: 100%; 
+//   }
+
+  .fname{
+    color: #4CB9E7;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .lname{
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+  /* Use Bootstrap classes to control visibility based on screen size */
+  @media (max-width: 767px) {
+    .logo-desktop {
+      display: none !important; /* Hide the desktop image on mobile screens */
+    }
+    .fname{
+      display: none;
+    }
+    .lname{
+      display: none;
+    }
+  }
+
+  

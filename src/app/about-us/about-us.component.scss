@@ -1,0 +1,49 @@
+// .floating-button {
+//     position: fixed;
+//     right: 20px; /* Adjust the distance from the right edge as needed */
+//     bottom: 20px; /* Adjust the distance from the bottom edge as needed */
+//     z-index: 1000; /* Ensure the button appears above other elements */
+// }
+.floating-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Add any other styles you need for your page */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+  }
+  @media (max-width: 576px) { /* Adjust the breakpoint as needed */
+    .ereaders-footer-widget {
+        display: none; /* Hide the div on smaller screens */
+      }
+    .ereaders-main-content{
+        height: 200vh;
+    }
+
+    h3 {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+    h5{
+        font-size: 12px;
+    }
+}
+
+.box2 {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  // background-color: #a7ccf0;
+}

@@ -1,0 +1,44 @@
+.ereaders-main-section{
+    background-color: #242424;
+}
+.main{
+    padding: 0;
+}
+h5{
+    color: white;
+}
+img{
+    padding: 5px;
+}
+@media (max-width: 576px) { /* Adjust the breakpoint as needed */
+    h3 {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+    h5{
+        font-size: 12px;
+    }
+    .row p{
+        display: none;
+    }
+}
+.floating-button {
+    position: fixed;
+    right: 20px; /* Adjust the distance from the right edge as needed */
+    bottom: 20px; /* Adjust the distance from the bottom edge as needed */
+    z-index: 1000; /* Ensure the button appears above other elements */
+}
+.arrowUp {
+    position: fixed;
+    left:20px;
+    bottom: 20px; /* Adjust the distance from the bottom edge as needed */
+    z-index: 1000;
+}
+.box2 {
+    // border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: rgba(68, 67, 67, 0.61);
+  }

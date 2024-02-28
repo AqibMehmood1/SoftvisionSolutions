@@ -1,0 +1,468 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+  --lato: "Lato", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+.poppins {
+  font-family: var(--poppins);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  /* Set the thumb color */
+  border-radius: 5px;
+  /* Add rounded corners to the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: gray;
+  /* Set the background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  /* Set the thumb color */
+  border-radius: 5px;
+  /* Add rounded corners to the thumb */
+}
+
+/* Style the scrollbar when hovering over it */
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+  /* Change color on hover */
+}
+
+.lato {
+  font-family: var(--lato);
+}
+
+/* header section */
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+  /* padding: 1vw 5vw; */
+  .navbar-brand {
+    img {
+      height: 8vh;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      margin: 15px 15px !important;
+      font-size: 13px;
+      /* list-style-type: circle; */
+      .nav-link {
+        font-family: var(--lato);
+      }
+    }
+
+    .custm {
+      background-color: #234fa0;
+      padding: 0px 4px;
+      border-radius: 20px;
+      a {
+        color: white !important;
+      }
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      color: orange;
+    }
+  }
+
+  .active {
+    color: orange !important;
+  }
+}
+
+.image-container {
+  background: url("/assets/img1.jpg");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  .col-sm-7 {
+    padding-top: 100px;
+  }
+  h3 {
+    line-height: 46px;
+    font-size: 39px;
+  }
+}
+
+.side-icon {
+  // margin-left: 30%;
+  // float: left;
+}
+.ereaders-counter-text {
+  display: inline-block;
+  width: 170px;
+  text-align: left;
+}
+.offwhite-bg {
+  /* background: #fbf8dd; */
+}
+
+.ereaders-main-section {
+  /* float: left; */
+  width: 100%;
+  position: relative;
+}
+
+.ereaders-counterfull {
+  background-color: white;
+  padding: 60px 0px;
+}
+
+.border-right {
+  border-right: 1px solid rgba(128, 128, 128, 0.575);
+}
+.product-img{
+  background-image: url(/assets/img4.jpg);
+  // backdrop-filter: blur(50px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+// .ereaders-main-content{
+//   background-image: url(/assets/img3.jpg);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   color: white;
+// }
+.parallax {
+  background-image: url(/assets/img3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .ad-pd {
+    margin-bottom: 40px;
+  }
+
+  .left-right-padding {
+    padding: 67px 0px;
+  }
+}
+
+.smFlex {
+  .advantage-box {
+    box-shadow: none;
+    border: 1px solid #fff;
+    height: 220px;
+    border-radius: 20px;
+  }
+  .ereaders-service-grid-text {
+    // padding: 41px 30px 32px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .advantage-icon {
+    margin-bottom: 15px;
+  }
+}
+.sm-sec {
+  .ereaders-service-gridfull {
+    margin: 0px;
+  }
+
+  .offwhite-bg {
+    background: #fbf8dd;
+  }
+  .ereaders-main-section {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .ereaders-service-gridfull {
+    margin: 0px 0px 50px;
+  }
+  .ereaders-counterfull {
+    background-color: #f7f7f7;
+    padding: 35px 0px;
+  }
+
+  .left-right-padding {
+    /* padding: 0px 67px; */
+  }
+  .ad-pd {
+    margin-bottom: 40px;
+  }
+
+  .offwhite-bg {
+    background: #fbf8dd;
+  }
+
+  .xt-sm {
+    .left-right-padding {
+      /* padding: 0px 67px; */
+    }
+    .ereaders-service,
+    .ereaders-service-grid-text {
+      float: left;
+      width: 100%;
+    }
+
+    .help-icon {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.ot {
+  padding-bottom: 33px;
+}
+
+.ereaders-footer-widget {
+  background-color: #2e2e2e;
+  padding: 70px 0px 80px;
+}
+
+.footer-parallax {
+  background-image: url("/assets/contacta.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.enq-btn {
+  padding: 11px 59px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #2e2e2e;
+  border-color: #234fa0;
+}
+
+.ereaders-footer-newslatter {
+  width: 66%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ereaders-copyright {
+  float: left;
+  width: 100%;
+  background-color: black;
+  padding: 18px 0px 8px;
+}
+
+.ereaders-copyright p {
+  float: left;
+  margin: 0px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.box-20 {
+  border-radius: 20px;
+}
+
+.rq {
+  .header-bg-color {
+    background: #234fa0;
+  }
+
+  .ereaders-service-gridfull {
+    margin: 0px;
+  }
+
+  .ereaders-main-section {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+
+  .ereaders-service-gridfull {
+    margin: 0px 0px 50px;
+  }
+
+  .ereaders-counterfull {
+    /* background-color: #f7f7f7; */
+    padding: 35px 0px;
+  }
+}
+.ereaders-main-content {
+  padding: 60px 0px 60px 0px;
+  .ereaders-main-section {
+    float: left;
+    width: 100%;
+    position: relative;
+    .ereaders-contact-wrap {
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      margin: 0px 0px 20px;
+    }
+  }
+}
+
+.ereaders-contact-form {
+  width: 100%;
+}
+
+.ereaders-contact-form {
+  float: left;
+  width: 50%;
+  padding: 36px 24px 0 30px;
+}
+
+.about-us {
+  background-image: url(/assets/img5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p {
+    color: white;
+    // background-color: rgb(187, 225, 243);
+  }
+  // height: 110vh;
+  .header-bg-color {
+    background: #234fa0;
+  }
+
+  .ereaders-service-gridfull {
+    margin: 0px;
+  }
+  .ereaders-main-section {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .ereaders-service-gridfull {
+    margin: 0px 0px 50px;
+  }
+
+  .ereaders-counterfull {
+    padding: 35px 0px;
+  }
+
+  .ereaders-main-content {
+    margin-bottom: 100px;
+  }
+
+  .ereaders-main-wrapper,
+  .ereaders-main-content,
+  .ereaders-main-header,
+  #ereaders-header {
+    float: left;
+    width: 100%;
+  }
+
+  .ereaders-about-us {
+    padding: 0px 0px 0px;
+  }
+}
+
+h4,
+h2 {
+  color: #234fa0;
+}
+
+.btn-success {
+  background-color: #234fa0 !important;
+  border-color: #234fa0 !important;
+}
+
+.mts {
+  height: 55vh !important;
+}
+
+@media (max-width: 470px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .image-container {
+    height: 18vh;
+  }
+
+  .image-container .col-sm-7 {
+    display: none;
+  }
+
+  .navbar .navbar-brand img {
+    // height: 4vh;
+  }
+
+  .ereaders-counterfull {
+    background-color: white;
+    padding: 19px 0px;
+  }
+
+  .side-icon {
+    // margin-left: 12%;
+    // margin-top: 16px;
+  }
+
+  .ereaders-counter-text h5 {
+    font-size: 18px !important;
+  }
+
+  .parallax .left-right-padding {
+    padding: 33px 0px;
+    padding-bottom: 0px;
+    font-size: 12px;
+  }
+  .smFlex .ereaders-service-grid-text {
+    padding: 26px 30px 32px;
+  }
+
+  .smFlex .advantage-box {
+    height: auto;
+  }
+
+  .sm-sec .ereaders-counterfull {
+    padding: 0px 0px !important;
+  }
+
+  .ereaders-copyright {
+    padding: 18px 0px 8px;
+  }
+
+  .footer-parallax {
+    height: 245vh;
+  }
+
+  .navbar .navbar-nav .custm {
+    padding: 4px 31px;
+  }
+
+  .about-us .ereaders-counterfull {
+    padding: 19px 0px;
+  }
+  .about-us .ereaders-service-gridfull {
+    margin: 0px 0px 0px;
+  }
+
+  .ereaders-main-content {
+    padding: 5px 0px 60px 0px;
+  }
+
+  .mx-custm {
+    height: 100vh !important;
+    margin-top: 195px;
+  }
+
+  .offset-3 {
+    margin-left: 0% !important;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

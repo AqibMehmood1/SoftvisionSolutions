@@ -1,0 +1,26 @@
+.container-fluid{
+    padding: 50px;
+    height: 90vh;
+}
+.poppins,.text-dark lato{
+    color: white;
+}
+
+
+.logo-mobile, .logo-desktop {
+    max-width: 100%; /* Make sure the images don't exceed their container */
+  }
+
+  /* Media query for screens smaller than or equal to 767px (typical mobile devices) */
+  @media (max-width: 767px) {
+    .logo-desktop {
+      display: none; /* Hide the desktop image on mobile screens */
+    }
+  }
+
+  /* Media query for screens 768px and above (typical desktop screens) */
+  @media (min-width: 768px) {
+    .logo-mobile {
+      display: none; /* Hide the mobile image on desktop screens */
+    }
+  }
